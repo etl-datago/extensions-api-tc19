@@ -8,6 +8,8 @@
         // This is the entry point into the extension.
         public async initialize() {
 
+            // Start with initialization
+            tableau.extensions.initializeAsync();
         }
     }
 
