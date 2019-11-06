@@ -7,7 +7,7 @@ module.exports = {
     datasources: './Samples-Typescript/DataSources/datasources.ts',
     filtering: './Samples-Typescript/Filtering/filtering.ts',
     parameters: './Samples-Typescript/Parameters/parameters.ts',
-    ourext: './Samples-Typescript/OurExtension/ourext.ts'
+    superstore: './Samples-Typescript/Superstore/superstore.ts'
   },
   mode: 'production',
   output: {
