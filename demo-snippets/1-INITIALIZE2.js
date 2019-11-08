@@ -1,5 +1,5 @@
 {'configure': showChooseSheetDialog}
 
 function showChooseSheetDialog() {
-    $("#test").append("<br>Hello World");
+    $("#test").append("<br>Choose Sheet");
   }
