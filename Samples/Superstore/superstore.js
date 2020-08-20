@@ -26,8 +26,7 @@
       demoHelpers.showDialog(dashboardName, worksheetNames, loadSelectedMarks);
     }
 
-
-
+    // carregar marcados
     function loadSelectedMarks(worksheetName) {
       //Texto para omarcas selecionada
       $('#selected_marks_title').text(worksheetName);
@@ -42,13 +41,7 @@
       });
     }
 
-
-
-
-
-
-
-    
-
   });
+
+
 })();
