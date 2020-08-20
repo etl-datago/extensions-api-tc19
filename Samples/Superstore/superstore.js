@@ -55,28 +55,26 @@
       //Obtem nome marcas selecionada
       const worksheet = demoHelpers.getSelectedSheet(worksheetName);
       
-
-
       // ------------ ZONA MOD ------------
       // Obtem todas as marcas selecionadas
       // apenas marcas: worksheet.getSelectedMarksAsync().then((marks) => {
       worksheet.getSummaryDataAsync().then((dados) => {
           //Popular datatable
+          // marks.data[0];
           demoHelpers.populateDataTable(dados, filterByColumn);
       });
-      
-      
+      // ------------ ZONA MOD ------------
+
       // obtem marcas selecionadas apenas      
       const marksSelectedEventHandler = (event) => {
         loadSelectedMarks(worksheetName);
       }
       removeEventListener = worksheet.addEventListener(
-        tableau.TableauEventType.MarkSelectionChanged, marksSelectedEventHandler);
-
-      // ------------ ZONA MOD ------------
+        tableau.TableauEventType.MarkSelectionChanged, marksSelectedEventHandler
+        );
 
     }
-
+    
 
     function saveSheetAndLoadSelectedMarks(worksheetName) {
       tableau.extensions.settings.set('sheet', worksheetName);

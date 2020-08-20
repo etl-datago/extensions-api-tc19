@@ -33,12 +33,13 @@
       <div id="selected_marks">
           <h4>
               Detalhes para <span class="sheet_name" id="selected_marks_title">Sheet Name</span>
-              <button title="Choose Sheet" type="button" class="btn btn-link" id="show_choose_sheet_button">
+              <button title="Reset Filters" type="button" class="btn btn-link" id="reset_filters_button" style="float: right">
+                <i class="material-icons">replay</i>
+              </button>
+              <button title="Choose Sheet" type="button" class="btn btn-link" id="show_choose_sheet_button" style="float: right">
                 <i class="material-icons">build</i>
               </button>
-              <button title="Reset Filters" type="button" class="btn btn-link" id="reset_filters_button">
-                  <i class="material-icons">replay</i>
-              </button>
+              
           </h4>
           <div id="data_table_wrapper"></div>
           <div id="no_data_message">
@@ -53,7 +54,7 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content" style="height: 100%">
               <div class="modal-header">
-                  <h5 class="modal-title">Seleciona a planilha para filtrar em  <span class="sheet_name" id="choose_sheet_title"></span></h5>
+                  <h5 class="modal-title">Selecione uma planilha para filtrar em <span class="sheet_name" id="choose_sheet_title"></span></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
