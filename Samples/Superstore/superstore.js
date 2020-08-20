@@ -21,6 +21,7 @@
       if (savedSheetName) {
         loadSelectedMarks(savedSheetName);
       } else {
+        // Caixa de Diálogo para selecionar planilha
         showChooseSheetDialog();
       }
 
