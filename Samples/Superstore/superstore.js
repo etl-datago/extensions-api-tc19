@@ -60,9 +60,9 @@
       // ------------ ZONA MOD ------------
       // Obtem todas as marcas selecionadas
       // apenas marcas: worksheet.getSelectedMarksAsync().then((marks) => {
-      worksheet.getSummaryDataAsync().then((marks) => {
+      worksheet.getSummaryDataAsync().then((dados) => {
           //Popular datatable
-          demoHelpers.populateDataTable(marks, filterByColumn);
+          demoHelpers.populateDataTable(dados, filterByColumn);
       });
       
       
