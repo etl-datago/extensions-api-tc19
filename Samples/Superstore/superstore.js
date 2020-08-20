@@ -61,7 +61,7 @@
           demoHelpers.populateDataTable(marks, filterByColumn);
       });
       
-      // obtem marcas selecionadas assincronas      
+      // obtem marcas selecionadas apenas      
       const marksSelectedEventHandler = (event) => {
         loadSelectedMarks(worksheetName);
       }
@@ -69,6 +69,7 @@
         tableau.TableauEventType.MarkSelectionChanged, marksSelectedEventHandler);
 
     }
+
 
     function saveSheetAndLoadSelectedMarks(worksheetName) {
       tableau.extensions.settings.set('sheet', worksheetName);
