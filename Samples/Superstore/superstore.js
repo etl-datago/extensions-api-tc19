@@ -55,11 +55,16 @@
       //Obtem nome marcas selecionada
       const worksheet = demoHelpers.getSelectedSheet(worksheetName);
       
+
+
+      // ------------ ZONA MOD ------------
       // Obtem todas as marcas selecionadas
-      worksheet.getSelectedMarksAsync().then((marks) => {
+      // apenas marcas: worksheet.getSelectedMarksAsync().then((marks) => {
+      worksheet.getSummaryDataAsync().then((marks) => {
           //Popular datatable
           demoHelpers.populateDataTable(marks, filterByColumn);
       });
+      
       
       // obtem marcas selecionadas apenas      
       const marksSelectedEventHandler = (event) => {
@@ -67,6 +72,8 @@
       }
       removeEventListener = worksheet.addEventListener(
         tableau.TableauEventType.MarkSelectionChanged, marksSelectedEventHandler);
+
+      // ------------ ZONA MOD ------------
 
     }
 
